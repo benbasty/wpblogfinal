@@ -1,0 +1,458 @@
+/* 
+Theme Name : The Blog
+Author: Ben Basty
+Author URI: benbasty.github.io
+Description: official blog
+Version: 1.0
+*/
+
+body{
+    font-family: 'Bree Serif', serif !important;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff !important;
+    transition: all 650ms;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #793434 !important;
+    background: #5f758b67;
+}
+.navbar-brand {
+    font-size: 25px !important;
+    transition: all 650ms;
+}
+.navbar-brand:hover{
+    opacity: 0.3;
+    font-size: 28px !important;
+}
+
+
+
+
+
+.nav-item .dropdown-menu{
+    margin-top: 8px;
+    margin-left: -244px !important;
+    position: relative;
+    background-color: #fff;
+    padding: 3px 1px;
+}
+.dropdown-menu input{
+    border: none;
+}
+
+.header-welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/blog-header-bg.jpg);
+    background-color: rgba(0,0,0,0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.header-welcome h1 {
+    padding: 8px;
+    background: rgb(124, 124, 109);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+}
+
+.header-welcome h3 {
+    background-color: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    display: inline;
+}
+#blog-section{
+    margin: 100px auto;
+}
+.section-header{
+    padding-bottom: 30px;
+    font-size: 32px;
+    border-left: 3px solid black;
+    transition: all 650ms;
+    display: inline-block;
+    padding: 4px 32px;
+}
+
+.section-header:hover{
+    padding: 4px 48px;
+    color:#ffffff;
+    background-color: cornflowerblue;
+    
+}
+
+.section-header a:hover{
+    text-decoration: none;
+    
+}
+
+
+ 
+.card-img-top{
+    transition: all 650ms;
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+.card-img-top:hover {
+    transform: translate(0, 5px);
+    box-shadow: 0 10px 6px -6px;
+}
+
+.card .btn{
+    transition: all 650ms;
+}
+.card .btn:hover{
+    padding: 6px 30px;
+    color:red;
+}
+
+#sidebar {
+    background-color: #eee;
+    opacity: 0.95;
+    color: rgb(156, 154, 154);
+    padding: 8px 16px;
+    /* box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);  */
+}
+
+#sidebar a{
+    color: rgb(48, 50, 51);
+    transition: 650ms;
+}
+#sidebar a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+#sidebar li {
+    margin: 8px 0;
+    list-style: none;
+}
+#sidebar li li{
+    margin-left: -28px;
+}
+
+#sidebar input {
+    width: 70%;
+    margin-right: 4px;
+}
+
+.card-meta{
+    color: #333;
+    font-size: 14px;
+    padding: 16px;
+}
+.card-body h5{
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+
+footer{
+    background-color: dimgrey;
+}
+
+footer h4 {
+    color:white;
+}
+.footer-left-links,
+.footer-right-links{
+    list-style: none;
+}
+.footer-left-links a,
+.footer-right-links a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-right-links{
+    position: relative;
+}
+
+.footer-right-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-right-links li a{
+    font-size: 2rem;
+}
+.footer-right .copyright{
+    font-weight: 100 !important;
+    font-size: 12px;
+}
+
+/* pagination styling */
+
+.pagination-wrap {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.pagination-wrap .pagination {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.pagination-wrap .pagination > li:first-child > a, 
+.pagination-wrap .pagination > li:first-child > span {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.pagination-wrap .pagination > li:last-child > a, 
+.pagination-wrap .pagination > li:last-child > span {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.pagination-wrap .pagination > li > a,
+.pagination-wrap .pagination > li > span {
+    background-color: rgb(20, 151, 238);
+    border: 1px solid rgb(55, 144, 196);
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.pagination-wrap .pagination > li > a:hover, 
+.pagination-wrap .pagination > li > span:hover, 
+.pagination-wrap .pagination > li > a:focus, 
+.pagination-wrap .pagination > li > span:focus {
+    background-color: rgb(20, 151, 238);;
+    border-color: rgb(55, 144, 196);
+}
+.pagination-wrap .pagination .current {
+    background-color: rgb(20, 151, 238);
+    border-color: rgb(55, 144, 196);
+}
+.pagination-wrap .pagination .current:hover,
+.pagination-wrap .pagination .current span:hover {
+    background-color: rgb(20, 151, 238);
+    border-color: rgb(55, 144, 196);
+}
+
+/* comment-section */
+
+#comment-section{
+    /* background: rgba(228, 225, 225, 0.979); */
+    background: #eee;
+    opacity: 0.99;
+    position: relative;
+    border-top: 2px solid #eee;
+    padding: 8px;
+}
+#comment-section input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+}
+.comment-respond textarea,
+input[type=text]{
+    width: 100% !important;
+}
+.comment-notes,
+.comment-reply-title{
+    text-align: center;
+    color:rgb(0, 28, 36);
+}
+.form-submit .submit,
+.wpcf7 .wpcf7-submit {
+    background: white;
+    font-weight: bold;
+    /* width: 100%; */
+    padding: 8px;
+    border: 2px solid black;
+    height:48px;
+    cursor: pointer;
+    transition:0.4s;
+    box-shadow:initial;
+
+}
+.form-submit .submit:hover,
+.wpcf7 .wpcf7-submit:hover {
+    background: rgba(219, 229, 233, 0.904);
+    color: rgb(247, 11, 11);
+}
+p.comment-form-cookies-consent{
+    display: flex;
+}
+
+.comment-form-cookies-consent label{
+    margin-left: 5px;
+}
+
+
+
+ .comments{
+    margin-top:24px;
+    border-top: 2px solid rgba(241, 243, 243, 0.904);
+}
+
+.comments h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.all-comments li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+
+
+.all-comments .comment-meta {
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.all-comments .says {
+    display: none;
+}
+.vcard .fn::after{
+    content: '\00B7';
+    margin-left: 2px;
+}
+.all-comments .vcard {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+.vcard b.fn{
+    position: relative;
+    top: -15px;
+    margin-left: 10px;  
+    color: rgb(140, 214, 243);
+}
+.comment-metadata a{
+    position: relative;
+    top: -15px;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+.comment-metadata a:hover{
+    text-decoration: none;
+}
+.comment-metadata .comment-edit-link{
+    color: rgb(77, 175, 141);
+    padding: 0 5px;
+}
+.all-comments .photo {   
+    height: 40px;
+    width: 40px;
+}
+.comment-content p {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 70px;
+    line-height: 1.5;
+    top: -30px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.reply .comment-reply-link {
+    position: relative;
+    margin-left: 70px;
+    line-height: 1.5;
+    top: -50px;
+    font-size: 12px;
+}
+.all-comments .comment-body {
+    position: relative;
+    margin-bottom: -30px;
+    
+} 
+.all-comments .children {
+    margin-top: -10px;
+} 
+
+.all-comments .reply {
+    font-weight: bold;
+}
+
+/* search results */
+
+.no-results ul li{
+    margin-left: 350px !important;
+}
+.no-results h2{
+    color: crimson;
+}
+
+/* contact */
+
+.wpcf7-submit{
+    width: 50%;
+} 
+
+/* 404 */
+#page404{
+    height: 62vh;
+}
+
+
+
+
+@media (max-width:768px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 46%;
+    }
+    .card .card-body .card-title {
+        font-size: 1rem;
+    }
+    .card .card-body .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:375px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 100% !important;  
+    }
+    .dropdown-menu .form-control {   
+        width: 15% !important;
+    }
+    .dropdown-menu .btn {   
+        width: 25% !important;
+        font-size: 10px;
+    }
+    .header-welcome h1 {
+        
+        font-size: 50px;
+    }
+    
+    .header-welcome h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:414px){
+    .nav-item .dropdown-menu{
+        margin-left: 0px !important;
+        width: 100%;
+        font-size: 0.8rem;   
+    }
+    .dropdown-menu .form-control {   
+        width: 72% !important;
+    }
+}
